@@ -7,6 +7,13 @@
     <title>TA TE TI</title>
 </head>
 <body>
+    <div class="score">
+        <h3>Puntos</h3>
+        <div class="score-container">
+            <p>X: <label id="X-points">0</label></p>
+            <p>O: <label id="O-points">0</label></p>
+        </div>
+    </div>
     <div class="turn-container">
         <h3>Turno de</h3>
         <div class="turn-box align">X</div>

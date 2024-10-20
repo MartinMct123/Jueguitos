@@ -2,6 +2,8 @@ let boxes = document.querySelectorAll(".box");
 
 let turn = "X";
 let isGameOver = false;
+let pointsX = 0;
+let pointsO = 0;
 
 boxes.forEach(e =>{
     e.innerHTML = ""
@@ -39,6 +41,14 @@ function cheakWin(){
 
         if(v0 != "" && v0 === v1 && v0 === v2){
             isGameOver = true;
+            if (turn === "X") {
+                pointsX += 1;
+                document.getElementById("X-points").innerHTML = pointsX;
+            }
+            if (turn === "O") {
+                pointsO += 1;
+                document.getElementById("O-points").innerHTML = pointsO;
+            }
             document.querySelector("#results").innerHTML = "Gana " + turn;
             document.querySelector("#play-again").style.display = "inline"
 
