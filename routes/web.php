@@ -9,3 +9,6 @@ Route::get('/', function () {
 Route::get('/tateti', function () {
     return view('games.tateti');
 });
+Route::get('/pong', function () {
+    return view('games.pong');
+});

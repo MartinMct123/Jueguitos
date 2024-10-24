@@ -11,5 +11,8 @@
     <div class="games">
         <a href="/tateti">TA TE TI</a>
     </div>
+    <div class="games">
+        <a href="/pong">PONG</a>
+    </div>
 </body>
 </html>
