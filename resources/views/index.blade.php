@@ -14,5 +14,8 @@
     <div class="games">
         <a href="/pong">PONG</a>
     </div>
+    <div class="games">
+        <a href="/snake">SNAKE</a>
+    </div>
 </body>
 </html>

@@ -12,3 +12,6 @@ Route::get('/tateti', function () {
 Route::get('/pong', function () {
     return view('games.pong');
 });
+Route::get('/snake', function () {
+    return view('games.snake');
+});
