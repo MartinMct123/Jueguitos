@@ -15,3 +15,9 @@ Route::get('/pong', function () {
 Route::get('/snake', function () {
     return view('games.snake');
 });
+Route::get('/memoria', function () {
+    return view('games.memoria');
+});
+Route::get('/adivinarnumero', function () {
+    return view('games.adivinarnumero');
+});
