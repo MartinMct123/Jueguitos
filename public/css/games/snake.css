@@ -1,11 +1,32 @@
+@font-face {
+    font-family: 'Pixel';
+    src: url('../../fonts/PublicPixel-rv0pA.ttf') format('truetype');
+}
+
 body {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: #f0f0f0;
+    background-color: #000000;
     margin: 0;
-    font-family: Arial, sans-serif;
+    font-family: 'Pixel', sans-serif;
+}
+
+.back {
+    position: absolute;
+    left: 20px;
+    top: 20px;
+}
+
+.back svg {
+    width: 30px;
+    height: 30px;
+    fill: #ffffff;
+}
+.back svg:hover {
+    width: 35px;
+    height: 35px;
 }
 
 #game-container {
@@ -28,8 +49,8 @@ canvas {
 }
 
 #score, #time {
-    font-size: 18px;
-    color: #333;
+    font-size: 14px;
+    color: #ffffff;
 }
 
 #game-over {
@@ -54,10 +75,11 @@ canvas {
 
 #game-over button {
     background-color: #333;
+    font-family: 'Pixel', sans-serif;
     color: white;
     border: none;
     padding: 10px 20px;
-    font-size: 16px;
+    font-size: 13px;
     cursor: pointer;
     margin: 5px;
 }

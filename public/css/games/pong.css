@@ -10,3 +10,19 @@ body {
   align-items: center;
   justify-content: center;
 }
+
+.back {
+  position: absolute;
+  left: 20px;
+  top: 20px;
+}
+
+.back svg {
+  width: 30px;
+  height: 30px;
+  fill: #ffffff;
+}
+.back svg:hover {
+  width: 35px;
+  height: 35px;
+}

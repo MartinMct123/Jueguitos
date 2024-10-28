@@ -1,8 +1,13 @@
+@font-face {
+    font-family: 'Pixel';
+    src: url('../../fonts/PublicPixel-rv0pA.ttf') format('truetype');
+}
+
 *{
     color: white;
-    font-family: sans-serif;
     transition: 0.2s ease-in-out;
     user-select: none;
+    font-family: 'Pixel', sans-serif;
 }
 
 .align{
@@ -12,7 +17,7 @@
 }
 
 body{
-    background-color: #252A34;
+    background-color: #000000;
     margin: 0;
     padding: 0;
     width: 100vw;
@@ -20,11 +25,28 @@ body{
     padding-top: 5vh;
 }
 
+.back {
+    position: absolute;
+    left: 20px;
+    top: 20px;
+}
+
+.back svg {
+    width: 30px;
+    height: 30px;
+    fill: #ffffff;
+}
+.back svg:hover {
+    width: 35px;
+    height: 35px;
+}
+
 .score {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    margin-bottom: 20px;
 }
 
 .score-container {
@@ -33,7 +55,7 @@ body{
 
 .score p {
     margin: 10px;
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     font-weight: 500;
 }
 
@@ -54,8 +76,8 @@ body{
 }
 
 .turn-container .turn-box{
-    border: 3px solid #000;
-    font-size: 1.6rem;
+    border: 3px solid #ffffff;
+    font-size: 1.1rem;
     font-weight: 700;
 }
 
@@ -80,14 +102,14 @@ body{
     height: 250px;
     width: 250px;
     margin: 30px auto;
-    border: 2px solid #000;
+    border: 2px solid #ffffff;
 }
 
 .box{
     cursor: pointer;
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: 700;
-    border: 2px solid #000;
+    border: 2px solid #ffffff;
 }
 
 .box:hover{
@@ -107,5 +129,5 @@ body{
 #play-again:hover{
     padding: 10px 40px;
     background-color: #08D9D6;
-    color: #000;
+    color: #ffffff;
 }

@@ -10,15 +10,10 @@
     <h1>Elige el juego</h1>
     <div class="games">
         <a href="/tateti">TA TE TI</a>
-    </div>
-    <div class="games">
         <a href="/pong">PONG</a>
-    </div>
-    <div class="games">
         <a href="/snake">SNAKE</a>
-    </div>
-    <div class="games">
-        <a href="/pacman">pacman</a>
+        <a href="/adivinarnumero">ADIVINA</a>
+        <a href="/memoria">MEMORIA</a>
     </div>
 </body>
 </html>

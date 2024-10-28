@@ -1,15 +1,45 @@
+@font-face {
+    font-family: 'Pixel';
+    src: url('../../fonts/PublicPixel-rv0pA.ttf') format('truetype');
+}
+
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Pixel', sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
     margin: 0;
-    background-color: #f0f0f0;
+    background-color: #000000;
+}
+
+.back {
+    position: absolute;
+    left: 20px;
+    top: 20px;
+}
+
+.back svg {
+    width: 30px;
+    height: 30px;
+    fill: #ffffff;
+}
+.back svg:hover {
+    width: 35px;
+    height: 35px;
 }
 
 .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     text-align: center;
+}
+
+.container h1 {
+    font-size: 1.5rem;
+    color: #ffffff;
 }
 
 .game-board {
@@ -30,4 +60,18 @@ body {
 
 .square.revealed {
     cursor: default;
+}
+
+#restart-button {
+    font-family: 'Pixel', sans-serif;
+    border: none;
+    color: #ffffff;
+    background-color: #000000;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+#restart-button:hover {
+    font-size: 1.2rem;
+    transition: 0.5s;
 }

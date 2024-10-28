@@ -20,7 +20,9 @@ const restartBtn = document.getElementById("restartBtn");
 const exitBtn = document.getElementById("exitBtn");
 
 restartBtn.addEventListener("click", restartGame);
-exitBtn.addEventListener("click", () => window.close());
+exitBtn.addEventListener("click", () => {
+    window.location.href = '/';
+});
 
 function startGame() {
     gameInterval = setInterval(updateGame, speed);

@@ -1,3 +1,8 @@
+@font-face {
+    font-family: 'Pixel';
+    src: url('../fonts/PublicPixel-rv0pA.ttf') format('truetype');
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -10,17 +15,27 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    background-color: #000000;
+    font-family: 'Pixel', sans-serif;
+    color: #ffffff;
 }
 
 .games {  
-    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+    gap: 20px;
 }
 
 .games a {
-    color: #000000;
+    color: #ffffff;
     text-decoration: none;
+    font-size: 1.5rem;
 }
 
 .games a:hover {
-    text-decoration: underline;
+    font-size: 2rem;
+    transition: 0.5s;
 }
